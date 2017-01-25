@@ -11,12 +11,8 @@ namespace Ddmurthare
 
             do
             {
-                Console.Write("Enter proposed chemical name:  ");
-                var chemicalName = Console.ReadLine();
-
-                Console.Write("Enter proposed chemical symbol:  ");
-                var chemicalSymbol = Console.ReadLine();
-
+                var chemicalName = GetInput("Enter proposed chemical name");
+                var chemicalSymbol = GetInput("Enter proposed chemical symbol");
                 var result = VerifyProposal(chemicalName.Trim(), chemicalSymbol.Trim());
                 var status = result ? "Accepted" : "Rejected";
 
@@ -28,6 +24,21 @@ namespace Ddmurthare
                 Console.WriteLine();
             }
             while (proceed.ToLower().Equals("y"));
+        }
+
+        #region Helpers
+
+        private static string GetInput(string message)
+        {
+            try
+            {
+                Console.Write($"{message}:  ");
+                return Console.ReadLine();
+            }
+            catch (Exception ex)
+            {
+                return "";
+            }
         }
 
         private static bool VerifyProposal(string chemicalName, string chemicalSymbol)
@@ -81,5 +92,7 @@ namespace Ddmurthare
 
             return true;
         }
+
+        #endregion
     }
 }
