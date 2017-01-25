@@ -1,0 +1,6 @@
+c:\Projects\Ddmurthare\Ddmurthare\bin\Debug\Ddmurthare.exe.config
+c:\Projects\Ddmurthare\Ddmurthare\bin\Debug\Ddmurthare.exe
+c:\Projects\Ddmurthare\Ddmurthare\bin\Debug\Ddmurthare.pdb
+c:\Projects\Ddmurthare\Ddmurthare\obj\Debug\Ddmurthare.csprojResolveAssemblyReference.cache
+c:\Projects\Ddmurthare\Ddmurthare\obj\Debug\Ddmurthare.exe
+c:\Projects\Ddmurthare\Ddmurthare\obj\Debug\Ddmurthare.pdb
